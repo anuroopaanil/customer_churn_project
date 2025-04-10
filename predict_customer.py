@@ -26,16 +26,9 @@ data = {
     "Feature20": [0],          # Replace with actual value for Feature20
 }
 
-# Make the prediction request
+# prediction request
 response = requests.post("http://127.0.0.1:5000/predict", json=data)
 
-# Print the response
+#  response
 print(response.json())
 
-# Example prediction result
-prediction = response.json()['prediction'][0]
-
-if prediction == 1:
-    print("The customer is likely to churn.")
-else:
-    print("The customer is not likely to churn.")

@@ -6,7 +6,7 @@ def preprocess_data(input_path, output_path):
     # Load the data
     data = pd.read_csv(input_path)
 
-    # Preprocess (example: drop nulls, encode categorical columns, etc.)
+    # Preprocess 
     data = data.dropna()
 
     # Example feature scaling (standardizing the data)
